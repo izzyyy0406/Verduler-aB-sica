@@ -1,0 +1,1501 @@
+body{
+    background-color: #ffffff;
+   
+}
+.cuadroAma{
+    background-color: #ffbb12;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    margin-top: 0%;
+    margin: 0vh 0vw;
+    padding:  16vh 8vw;
+   
+}
+.cuadroVer{
+    background-color: #20a200;
+    position: absolute;
+    
+    right:0px;
+    margin:0vh 0vw;
+    padding: 27vh 5.52vw;
+    top: 98vh;
+    left:88vw;
+}
+.atras {
+    background-color: #f2f5fa;
+    margin: 0vh 16vw;
+    padding:  76vh 35.8vw;
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.08), /* Sombra a la izquierda */
+                10px 0px 20px rgba(0, 0, 0, 0.153);  /* Sombra derecha */
+    position: absolute;
+    top: 0;
+    left: 50%; /* Lo posicionamos en la mitad */
+    transform: translateX(-57%); /* Lo centramos correctamente */
+    overflow: hidden; /* Evita que los títulos hagan crecer el div */
+    z-index: 1; /* Se mantiene sobre otros elementos si es necesario */
+}
+
+
+
+.brocoli {
+    
+    position: absolute;
+    top: 0px; 
+    left: 65px;
+    transform: translateX(-26.5%);
+    z-index: 2;
+    height: auto; /* Mantiene la proporción */
+    max-width: 250px;
+}
+.texto-superior {
+    max-width: 22%;
+    position: absolute;
+    color: #6c757d; /* Color gris */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 8px; /* Ajusta el tamaño de la fuente */
+    font-weight: normal;
+    width: 400px; /* Ajusta según necesidad */
+    background: transparent; /* Asegura que no tenga fondo */
+    text-align: justify;
+}
+
+.texto1{
+    top: 6px;
+    right: 197px;
+}
+
+.plantaAmarilla{
+   
+    position: absolute;
+    top: 7%; 
+    right: 37%;
+    
+    
+}
+
+.plantaAmarilla-img{
+    width: 65px; 
+    
+    
+}
+
+.texto-superior2 {
+    max-width: 8%;
+    max-height: 4%;
+    position: absolute;
+    color: #020202; /* Color gris */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 8px; /* Ajusta el tamaño de la fuente */
+    font-weight: bolder;
+    text-align: right;
+    z-index: 2; /* Mayor que el div gris */
+    background: transparent; /* Asegura que no tenga fondo */
+    text-align: justify;
+   
+    
+
+}
+
+.texto2{
+    top: 8%;
+    right: 27%;
+}
+
+
+.limones{
+   max-width: 148px; /* Ajusta según necesites */
+    max-height: 400px;
+    position: absolute;
+    top: 3.4%; 
+    right: 0%;
+    position: absolute;
+
+   
+    
+
+}
+
+.cuadroVer2arriba{
+    background-color: #486a1d;
+    width: 10%; /* Ajusta el tamaño según necesites */
+    height: 4%;
+    position: absolute;
+    top: 10.5vh; /* Ajusta para alinearlo verticalmente */
+    right:8vw; /* Ajusta para posicionarlo más cerca del botón verde */
+    border-radius: 5%;
+   
+}
+
+.texto-superior-verde{
+    display: flex; /* Permite centrar con flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 100%; /* Asegura que ocupe todo el div */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 9.8px; /* Ajusta el tamaño según necesidad */
+    font-weight: bold;
+    color: white; /* Color blanco para el texto */
+    text-transform: uppercase; /* Opcional: para que el texto sea en mayúsculas */
+    padding-right: 20%;
+}
+
+
+.flecha{
+    display: flex;
+    align-items: center;
+    width: 0px; /* Ajusta según necesites */
+    height: auto;
+    position: absolute;
+    top: 5px; 
+    
+    
+
+}
+.botones-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    right: 39px;
+    top: 228px; /* Asegura que los botones estén más arriba */
+    padding: 0vh 0vw;
+    
+   
+}
+
+.boton-filtro {
+    padding: 3px 22px; /* Tamaño reducido */
+    font-size: 10px; /* Reduce el tamaño del texto */
+    border: 2px solid #20a200;
+    background-color: white; /* Fondo blanco para todos los botones */
+    color: #20a200;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 3px;
+    z-index: 2; /* Mantiene los botones en primer plano */
+   
+}
+
+.boton-filtro.activo {
+    background-color: #20a200;
+    color: white;
+    
+}
+
+.boton-filtro:hover {
+    background-color: #20a200;
+    color: white;
+   
+}
+
+/* Línea punteada entre los botones */
+.linea-punteada {
+    width: 20px; /* Ajusta el ancho según la separación que necesites */
+    height: 2px; /* Opcional, ayuda a darle forma */
+    border-bottom: 2px dashed #20a200;
+    display: block; /* Asegura que se renderice */
+}
+
+
+/* Contenedor principal */
+.cuadros-Grises {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: nowrap; /* Evita que se vayan a otra línea */
+    
+    position: absolute; /* Para poder colocarlos debajo de los botones */
+    top: 269px; /* Ajusta este valor según la distancia deseada */
+    left: 70.2%;
+    transform: translateX(-50%); /* Centra horizontalmente */
+    z-index: 2;
+    
+}
+
+.cuadro-gris {
+    background-color: #e3e6eb;
+    width: 125px;
+    height: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+.imagen-fruta {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.bolsa {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 30px; /* 🔹 Ajusta el tamaño según necesidad */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Icono del corazón en la esquina superior derecha */
+.corazon {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    width: 30px; /* Ajusta el tamaño según necesidad */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Pequeño efecto al hacer clic */
+}
+
+/* Efecto al hacer clic */
+.corazon:active {
+    transform: scale(1.1);
+}
+
+.contenedor-puntos {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 5px; /* Ubica los puntos en la parte inferior del cuadro */
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 5px;
+}
+
+.punto {
+    width: 8px;
+    height: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.punto.activo {
+    background-color: #000000; /* El punto activo se ilumina */
+}
+
+.contenedor-titulo {
+   position: absolute; /* Lo saca del flujo para no modificar .atras */ 
+   z-index: 2;
+    
+   top: 50%;
+   right:50%;
+
+}
+
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.fresh {
+    color: #4b8904; /* Verde */
+    font-size: 35px;
+    font-weight: 900;
+    position: absolute;
+    top: -100%;
+    left: 199%; /* Más a la derecha */
+    transform: translateX(-50%);
+}
+
+.fruits {
+    color: #ffbb12; /* Amarillo */
+    font-size: 35px;
+    font-weight: 900;
+    position: relative;
+    left: 289px; /* Desplaza un poco */
+    bottom: 35px;
+}
+
+.vegetables {
+    color: #ffbb12; /* Amarillo */
+    font-size: 35px;
+    font-weight: 900;
+    position: absolute;
+    bottom: 5px;
+    left: 325px; /* Más a la derecha */
+   
+}
+
+
+
+
+
+.contenido-div {
+    position: relative;
+}
+
+.cerrar-div {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Italianno&display=swap');
+
+.titulo-supermarket {
+    position: absolute;  /* Posiciona el título de forma absoluta */
+    left: 5%;  /* Ajusta este valor para moverlo más a la izquierda */
+    margin-top: 14%;  /* Ajusta la distancia desde arriba según necesites */
+    text-align: left;
+}
+
+.titulo-supermarket h1 {
+  
+    color: black;
+    font-size: 250%;
+    margin: 0;
+    
+    margin-top: -20%;
+ 
+    font-family: 'Aguafina Script', cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+    
+}
+
+.titulo-supermarket .healthy {
+    font-family: Arial, sans-serif;
+    font-size: 45px;
+    
+    color: #4b8904; /* Verde */
+    font-weight: 1000;
+    position: absolute;
+    margin-top: -15%;
+   
+    
+}
+
+.titulo-supermarket .living {
+   
+
+    color: #ffbb12; /* Amarillo */
+    font-size: 45px;
+    font-weight: 1000;
+    position: absolute;
+    left: -1px; /* Desplaza un poco */
+    top: 6VH;
+   
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.vegetable {
+    position: absolute;
+    margin-top: 86px; /* Ajusta según la posición deseada */
+    left: 50px;
+    font-size: 300px; /* Ajusta el tamaño según necesites */
+    font-weight: bold;
+    color: rgba(255, 250, 250, 0.455); /* Blanco con baja opacidad */
+    text-transform: uppercase;
+    z-index: 1; /* Asegura que esté detrás de otros elementos */
+}
+.contenedor-productos {
+    display: flex;
+    flex-wrap: nowrap;
+   
+   
+    margin-top: 10%; /* Mantiene la posición */
+    z-index: 3;
+    position: absolute; /* Mantiene los productos sobre el fondo sin afectar otros elementos */
+    right: 20px;
+    
+    
+    
+    
+}
+
+.cuadro {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; /* Ajusta el tamaño */
+    font-size: 70%;
+    padding: 1px;
+    border-radius: 5px;
+    top: 20%;
+    z-index: 999; /* Asegura que esté detrás de otros elementos */
+
+    
+}
+
+
+
+.text-box4 {
+    position: absolute;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(14, 14, 14);
+    font-size: 9px;
+    max-width: 13%;
+    text-align: justify;
+    display: flex;             /* Productos en fila */
+    gap: 100px;                 /* Espacio entre ellos */
+}
+
+.text-box-6 {
+    top: 420px;
+    right: 420px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: px; /* Junta más el precio y el nombre */
+}
+
+.precio {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 7.5px;
+    line-height: 1.1; /* Opcional: reduce la separación interna */
+    margin: 0;        /* Asegura que no haya margen extra */
+}
+
+.nombre {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 8.5px;
+    line-height: 1.1; /* Opcional: reduce separación interna */
+    margin: 0;        /* Asegura que no haya margen extra */
+}
+
+.piña{
+    max-width: 120px; /* Ajusta según necesites */
+    max-height: 400px;
+    position: absolute;
+    right: 0px;
+    position: absolute;
+    
+   top: 63.9%;
+}
+
+.texto-abajo {
+    max-width: 29%;
+    max-height: 7%;
+    position: absolute;
+    color: #58525254; /* Color gris */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 60%; /* Ajusta el tamaño de la fuente */
+    font-weight: bolder;
+    text-align: right;
+    
+    background: transparent; /* Asegura que no tenga fondo */
+    text-align: left;
+   
+    
+
+}
+
+.texto3{
+    top: 62%;/*670*/
+    right: 11%;
+}
+
+
+.imagenes2{
+    display: flex;
+    flex-wrap: nowrap; /* Evita que se vayan a otra línea */
+    position: absolute;
+    top: 70%;
+    right: 3.2%;
+    position: absolute;
+    
+    
+}
+.ajo, .cebolla {
+    max-width: 30%;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+}
+
+.cebolla {
+    position: relative;
+    right: -15%; /* Ajusta la posición si es necesario */
+}
+
+
+
+
+.controles-flechas {
+    position: absolute;
+    left: 90%;
+   
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+    top: 96%;
+  }
+  
+  .divflechaIzq,
+  .divflechaDer {
+    width: 2vw;
+    height: 3vh;
+    background-color: white;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.57);
+    cursor: pointer;
+  }
+  
+  
+.cuadroVer3arriba{
+    background-color: #486a1d;
+    width: 110px; /* Ajusta el tamaño según necesites */
+    height: 27.8px;
+    position: absolute;
+    top: 88%; /* Ajusta para alinearlo verticalmente */
+    right: 30px; /* Ajusta para posicionarlo más cerca del botón verde */
+    
+    border-radius: 3px;
+    margin: 0vh 20vw;
+    padding:  0vh 0vw;
+}
+
+.texto-inferior-verde{
+    display: flex; /* Permite centrar con flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 100%; /* Asegura que ocupe todo el div */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 9.8px; /* Ajusta el tamaño según necesidad */
+    font-weight: bold;
+    color: white; /* Color blanco para el texto */
+    text-transform: uppercase; /* Opcional: para que el texto sea en mayúsculas */
+    padding-right: 20%;
+}
+
+
+.vegeta-container {
+    position: absolute;
+    top: 2%;
+    left: 53.8%;
+    
+    z-index: 10;
+    pointer-events: none;
+    white-space: nowrap;
+   
+}
+
+/* Capa de fondo: texto amarillo */
+.vegeta-text.yellow {
+    font-size: 552%;
+    
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(254, 221, 139, 0.329);
+    position: absolute;
+    top: 0;
+    left: 0%;
+   
+}
+
+/* Capa superior: texto blanco, recortado solo a un fragmento de la "V" */
+.vegeta-text.white {
+    font-size:552%;
+    
+    font-family: 'Montserrat', sans-serif;
+    color:#fafafa;
+    position: absolute;
+    top: 0;
+   
+    clip-path: polygon(0% 0%, 3% 0%, 3% 100%, 0% 100%);
+}
+.texto-div-grande{
+    max-width: 22%;
+    position: absolute;
+    color: #6c757d; /* Color gris */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 7px; /* Ajusta el tamaño de la fuente */
+    font-weight: normal;
+    width: 340px; /* Ajusta según necesidad */
+    background: transparent; /* Asegura que no tenga fondo */
+    text-align: left;
+    top: 56%;
+    left: 6%;
+    z-index: 5;
+}
+
+
+.img-vegetales{
+    
+        position: relative;
+        width: 100%;
+        height: 400px; /* o el alto que necesites */
+  
+}
+.imagen-vegetales {
+    position: absolute;
+    max-width: 40%;
+    height: auto;
+    left: 40.8%; /* Centrada respecto al padre */
+    top:21%;
+    
+    z-index: 5;
+}
+
+.panel-blanco-decorativo {
+    position: absolute;
+    top: 45%; /* Ajustá esto según visual */
+    left: 0;
+    width: 54.8%;
+    height: 30%;
+    background-color: white;
+    z-index: 4;
+  
+  }
+
+
+.div-grande {
+    width: 51%; /* 🔹 La mitad de la pantalla */
+    height: 120%; /* 🔹 Más pequeño */
+    background: linear-gradient(to right, #fafafa 55%, #ffbb12 45%);
+    position: absolute;
+    top: 10%; /* 🔹 Un poco más abajo */
+    left: 7.3%;
+    display:block ; /* 🔹 Oculto por defecto */
+    z-index: 4;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.662);
+    border-radius: 3px; /* 🔹 Bordes redondeados */
+    padding: 1.3%;
+    text-align: center;
+    overflow: hidden;
+}
+
+   
+   
+   
+.cuadroVerGrande{
+    background-color: #486a1d;
+    width: 15%; /* Ajusta el tamaño según necesites */
+    height: 6%;
+    position: absolute;
+    top: 67%; /* Ajusta para alinearlo verticalmente */
+  
+    left: 5.4%;
+    border-radius: 3px;
+    
+}
+
+.cuadro-inferior-verde{
+    display: flex; /* Permite centrar con flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 100%; /* Asegura que ocupe todo el div */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 50%; /* Ajusta el tamaño según necesidad */
+    font-weight: bold;
+    color: white; /* Color blanco para el texto */
+    text-transform: uppercase; /* Opcional: para que el texto sea en mayúsculas */
+    padding-right: 20px;
+    position: absolute;
+    left: 20%;
+}
+.flecha{
+    display: flex;
+    align-items: center;
+    width: 25%; /* Ajusta según necesites */
+    height: auto;
+    position: absolute;
+    top: 2%; 
+    left:85%;
+    
+
+}
+
+
+.linea-vertical {
+    position: absolute;
+    top: 0;
+    height: 90%;
+    width: 1px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 2; /* Encima del fondo, pero debajo del contenido si hace falta */
+
+}
+
+.titulo-GreenQuality {
+    position: absolute;
+    left: 60.7%; /* Punto de referencia */
+    top: 103%;   /* Ajusta según necesidad */
+    transform: translateX(-70%); /* Centra el bloque horizontalmente */
+    z-index: 5;
+    text-align: center;
+    width: max-content;
+}
+
+.titulo-GreenQuality .GREEN {
+    font-family: Arial, sans-serif;
+    font-size: 2.1vw;
+    color: #4b8902;
+    font-weight: 1000;
+    margin: 0;
+}
+
+.titulo-GreenQuality .QUALITY {
+    color: #ffffff;
+    font-size: 2.1vw;
+    font-weight: 1000;
+    margin-top: -12%;
+    font-family: Arial, sans-serif;
+    transform: translateX(-58%); /* Centra el bloque horizontalmente */
+    margin-left: 60%; /* 🔹 Mueve a la derecha */
+}
+
+.img-fruta{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+}
+.kiwi{
+    position: absolute;
+    left: 0;
+    top: 85%; /* Centrado vertical (opcional, podés ajustar) */
+   
+    max-width: 15%;
+    height: auto;
+    z-index: 7;
+}
+.img-canasta{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 5%;
+    top: 45%;
+}
+.canasta{
+    position: absolute;
+    left: 0;
+    
+    max-width: 45%;
+    height: auto;
+    z-index: 6;
+} 
+
+.titulo-OUR-RECENT-BLOG {
+    position: absolute;
+    text-align: left;
+    margin-top: 65vh; /* Espacio respecto a lo de arriba */
+    padding-left: -80%; /* 🔹 Mueve el bloque hacia la izquierda */
+    transform: translateX(-190%);
+
+}
+
+.titulo-OUR-RECENT-BLOG .our,
+.titulo-OUR-RECENT-BLOG .recent {
+    font-family: Arial, sans-serif;
+    font-size: 2.1vw;
+    font-weight: 1000;
+    margin: 0%;
+   
+}
+
+.titulo-OUR-RECENT-BLOG .our {
+    color: #8d8d8d;
+    margin-bottom: -2vh; /* 🔹 Esto los pega más */
+  }
+  
+  .titulo-OUR-RECENT-BLOG .recent {
+    color: #ffbd21;
+    transform: translateX(12%);
+  }
+
+
+  .text-box5 {
+    position: absolute;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(14, 14, 14);
+    font-size: 9px;
+    text-align: justify;
+    display: flex;       /* 🔹 Productos en línea */
+    gap: 8.7vw;            /* 🔹 Espacio entre ellos, ajustá a gusto */
+    transform: translateX(40%);
+    top: 83vh;
+  }
+  
+  .producto2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px;             /* 🔹 Espacio entre nombre y precio si lo agregás */
+  }
+  
+  .nombre2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 10px;
+    font-size: 8.5px;
+    margin: 0;
+  }
+  
+
+.text-box-7 {
+    top: 83%;
+    right: 28%;
+}
+
+
+.imagen-menta {
+    position: absolute;
+    top: -1%;     /* 🔹 Ajusta según lo cerca que querés que esté de la "O" */
+    left: -8%;     /* 🔹 Esto mueve la menta a la izquierda de la "O" */
+    z-index: 2;
+}
+
+.menta {
+    max-height: 29px; /* 🔹 Ajustá el tamaño si es necesario */
+    width: auto;
+}
+
+.cerrar-div {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.barra-navegacion {
+    position: absolute;
+    top: -3%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.8vh 2.4vw;
+    border-bottom-left-radius: 12px;
+    z-index: 6;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 1vw;
+    margin: 0;
+    padding: 0;
+}
+
+.barra-navegacion li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    transition: color 0.3s ease;
+}
+
+.barra-navegacion li a:hover {
+    color: #6d6b65;
+}
+
+
+.iconos-barra {
+    position: absolute;
+    top: -0.5%;
+    right: -1vw; /* 🔹 Más a la derecha que la barra */
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+    z-index: 10;
+}
+
+.iconos-barra img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.tit-selected-items {
+    position: absolute;
+    top: 123%; /* 🔹 Justo debajo de GREEN QUALITY */
+    left: 58%;
+    z-index: 5;
+}
+
+.selected {
+    font-family: Arial, sans-serif;
+    font-size: bold;
+    color: #000000;
+    margin: 0;
+    font-weight: 700;
+}
+
+.texto-div-grande2{
+    max-width: 22%;
+    position: absolute;
+    color: #080808; /* Color gris */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 7px; /* Ajusta el tamaño de la fuente */
+    font-weight: normal;
+    width: 340px; /* Ajusta según necesidad */
+    background: transparent; /* Asegura que no tenga fondo */
+    text-align: left;
+    top: 131%;
+    left: 58%;
+    z-index: 6;
+}
+
+
+.plantaBlanca{
+   
+    position: absolute;
+    top: 139%; 
+    right: 35%;
+    z-index: 6;
+    
+}
+
+.plantaBlanca-img{
+    width: 65px; 
+    
+    
+}
+
+
+.texto-inf3 {
+    max-width: 14%;
+    max-height: 8%;
+    position: absolute;
+    color: #020202; /* Color gris */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 8px; /* Ajusta el tamaño de la fuente */
+    font-weight: bolder;
+    text-align: right;
+    z-index: 2; /* Mayor que el div gris */
+    background: transparent; /* Asegura que no tenga fondo */
+    text-align: left;
+   
+    
+
+}
+
+.textoGrande3{
+    top: 141%;
+    right: 21%;
+}
+
+.titulo-HealthyFruits {
+    position: absolute;
+    left: 50%; /* Alineado en el lado derecho */
+    top: 92vh; /* Más abajo */
+    transform: translateX(-50%);
+    z-index: 5;
+    text-align: center;
+    line-height: 1; /* 🔹 Junta los textos verticalmente */
+}
+
+.titulo-HealthyFruits .healthy {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #a10a7e;
+    font-weight: 1000;
+    margin: 0;
+}
+
+.titulo-HealthyFruits .fruits {
+    font-family: Arial, sans-serif;
+    font-size:  30px;
+    color: #febb12;
+    font-weight: 1000;
+    margin: 0;
+    left: -20%;
+    position: absolute;
+    top: 87%;
+}
+
+
+
+.tit-selected-items2 {
+    position: absolute;
+    top: 102vh; /* 🔹 Justo debajo de GREEN QUALITY */
+    left: 25.9%;
+    z-index: 5;
+}
+
+.selected2 {
+    font-family: Arial, sans-serif;
+    font-size: bold;
+    color: #000000;
+    margin: 0;
+    font-weight: 700;
+}
+
+.plantaVerde{
+   
+    position: absolute;
+    top: 106vh; 
+    left: 10%;
+    z-index: 6;
+    
+}
+
+.plantaVerde-img{
+    width: 65px; 
+    
+    
+}
+
+
+.texto-inf4 {
+    max-width: 14%;
+    max-height: 8%;
+    position: absolute;
+    color: #020202; /* Color gris */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 8px; /* Ajusta el tamaño de la fuente */
+    font-weight: bolder;
+    text-align: right;
+    z-index: 8; /* Mayor que el div gris */
+    background: transparent; /* Asegura que no tenga fondo */
+    text-align: left;
+   
+    
+
+}
+
+.textoGrande4{
+    top: 107vh;
+    left: 19%;
+}
+
+ 
+.cuadroVerGrande2{
+    background-color: #486a1d;
+    width: 15%; /* Ajusta el tamaño según necesites */
+    height: 6%;
+    position: absolute;
+    top: 108vh; /* Ajusta para alinearlo verticalmente */
+    z-index: 7;
+    left: 35%;
+    border-radius: 3px;
+    
+}
+
+.cuadro-inferior-verde2{
+    display: flex; /* Permite centrar con flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 100%; /* Asegura que ocupe todo el div */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 50%; /* Ajusta el tamaño según necesidad */
+    font-weight: bold;
+    color: white; /* Color blanco para el texto */
+    text-transform: uppercase; /* Opcional: para que el texto sea en mayúsculas */
+    padding-right: 20px;
+    position: absolute;
+    left: 20%;
+}
+.flecha{
+    display: flex;
+    align-items: center;
+    width: 25%; /* Ajusta según necesites */
+    height: auto;
+    position: absolute;
+    top: 2%; 
+    left: 80px;
+    
+
+}
+
+.img-pedacito {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 12%;      /* Ajustá este valor si querés que se vea más ancho */
+    height: auto;
+    z-index: 6;
+}
+
+.pedacito {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-almendra {
+    position: absolute;
+    top: 11vh;
+    left: 20%;
+    width: 5%;      /* Ajustá este valor si querés que se vea más ancho */
+    height: auto;
+    z-index: 6;
+}
+
+.almendra {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.img-almendra2 {
+    position: absolute;
+    top: 71%;
+    left: 37%;
+    width:5%;      /* Ajustá este valor si querés que se vea más ancho */
+    height: auto;
+    z-index: 6;
+}
+
+.almendra2 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+.img-naranja {
+    position: absolute;
+    bottom: 23%;
+    right: 0;
+    width: 12%;      /* Ajustá este valor si querés que se vea más ancho */
+    height: auto;
+    z-index: 6;
+}
+
+.naranja {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-circulo {
+    position: absolute;
+    bottom: 45%;
+    right: 0;
+    width: 12%;      /* Ajustá este valor si querés que se vea más ancho */
+    height: auto;
+    z-index: 6;
+}
+
+.circulo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cuadroA-flecha{
+    background-color: #496a1d00;
+    width: 11%; /* Ajusta el tamaño según necesites */
+    height: 5%;
+    position: absolute;
+    top: 143%; /* Ajusta para alinearlo verticalmente */
+    z-index: 9;
+    right: 9%;
+    border: 2px solid #ffffff65; /* ✅ Borde blanco */
+    border-radius: 3px;
+    
+}
+
+.cuadroA{
+    display: flex; /* Permite centrar con flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 100%; /* Asegura que ocupe todo el div */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si quieres */
+    font-size: 50%; /* Ajusta el tamaño según necesidad */
+    font-weight: bold;
+    color: white; /* Color blanco para el texto */
+    text-transform: uppercase; /* Opcional: para que el texto sea en mayúsculas */
+    padding-right: 20px;
+    position: absolute;
+    left: 20%;
+   
+}
+
+.flechaA{
+    display: flex;
+    align-items: center;
+    width: 25%; /* Ajusta según necesites */
+    height: auto;
+    position: absolute;
+    top: 2%; 
+    left:70%;
+    
+
+}
+
+
+
+
+  .login-panel {
+    position: fixed;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 4vh 3vw;
+    display: none;
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  .login-panel input {
+    display: block;
+    width: 80%;
+    margin: 2vh auto;
+    padding: 1vh;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .login-panel button {
+    background-color: #ffbd21;
+    border: none;
+    padding: 1vh 3vw;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+  }
+  
+  .cerrar-login {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .modal-about {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 9999; /* Bien arriba */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* 👈 importante: evita scroll dentro del fondo */
+}
+
+
+.modal-content {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+    height: 80vh;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+
+    overflow: hidden; /* 👈 Esto es la clave */
+}
+
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.yo-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+  }
+  
+  .yo-img {
+    position: relative; /* ya no absoluta */
+    z-index: 2;
+    width: 600px; /* o el tamaño que prefieras */
+  }
+  
+  .corazon-amarillo {
+    position: absolute;
+    bottom: 0; /* se pega al fondo igual */
+    left: 50%;
+    transform: translateX(-50%) translateY(15%); /* opcional: sube un poco el corazón */
+    z-index: 1;
+  }
+  
+  .corazon-amarillo img {
+    width: 900px;
+    opacity: 0.8;
+  }
+  
+
+.maracuyas-margen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* para que no interfieran con clics */
+    top: 0;
+    left: 0;
+  }
+  
+  .maracuya {
+    position: absolute;
+    width: 90px; /* puedes ajustar el tamaño */
+    animation: girarMaracuya 4s linear infinite;
+  }
+  
+  @keyframes girarMaracuya {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .maracuyas-margen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+  }
+  
+  .maracuya-hover {
+    position: absolute;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .maracuya {
+    width: 90px;
+    animation: girarMaracuya 4s linear infinite;
+  }
+  
+  @keyframes girarMaracuya {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  .descripcion-hover {
+    position: absolute;
+    background-color: #fff8e1;
+    color: #333;
+    padding: 20px 30px;
+    border-radius: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+    white-space: normal;
+    margin-top: 10px;
+    z-index: 90;
+    width: 300px;
+    text-align: left;
+  }
+  
+  /* Para los maracuyás de la izquierda: texto hacia la derecha */
+  .descripcion-hover-right {
+    left: 110%;
+  }
+  
+  /* Para los maracuyás de la derecha: texto hacia la izquierda */
+  .descripcion-hover-left {
+    right: 110%;
+  }
+  
+  /* Hover */
+  .maracuya-hover:hover .descripcion-hover {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
+  
+
+  .texto-largo{
+    width: 70%;
+    margin-left: 15%;
+    margin-top:-5%;
+
+  }
+
+  .sobre-nosotros{
+    color: black;
+    font-size: 200%;
+    margin: 0;
+    margin-top: -5%; 
+    font-family: 'Aguafina Script', cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+ 
